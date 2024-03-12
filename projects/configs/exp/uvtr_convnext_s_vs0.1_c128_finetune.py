@@ -272,7 +272,7 @@ checkpoint_config = dict(max_keep_ckpts=1, interval=1)
 
 find_unused_parameters = True
 runner = dict(type="EpochBasedRunner", max_epochs=total_epochs)
-load_from = "data/ckpts/uvtr_convnext_s_vs0.1_c128_pretrain.pth"
+load_from = "work_dirs/uvtr_convnext_s_vs0.1_c128_pretrain/epoch_12.pth"
 resume_from = None
 # fp16 setting
 fp16 = dict(loss_scale=32.0)
